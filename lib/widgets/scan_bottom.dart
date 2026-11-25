@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 
 class ScanButton extends StatelessWidget {
   const ScanButton({Key? key}) : super(key: key);
@@ -10,8 +11,15 @@ class ScanButton extends StatelessWidget {
       child: Icon(
         Icons.filter_center_focus,
       ),
-      onPressed: () {
+      onPressed: () async {
         print('Botó polsat!');
+
+
+        String barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
+          '#3D8BEF', 
+          'Cancel·lar', 
+          false, 
+          ScanMode.QR,);
       },
     );
   }
