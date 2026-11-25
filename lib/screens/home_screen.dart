@@ -36,7 +36,6 @@ class _HomeScreenBody extends StatelessWidget {
 
     // Canviar per a anar canviant entre pantalles
     final currentIndex = uiProvider.selectedMenuOpt;
-
     switch (currentIndex) {
       case 0:
         return MapasScreen();
