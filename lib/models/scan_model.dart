@@ -5,7 +5,7 @@ ScanModel scanModelFromMap(String str) => ScanModel.fromMap(json.decode(str));
 String scanModelToMap(ScanModel data) => json.encode(data.toMap());
 
 class ScanModel {
-    final int? id;
+    int? id;
     String? tipus;
     final String valor;
 
