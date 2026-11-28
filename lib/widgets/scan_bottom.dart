@@ -18,7 +18,7 @@ class ScanButton extends StatelessWidget {
       onPressed: () async {
         print('Botó polsat!');
 
-        String barCodeScanRes =  'https://paucasesnovescifp.cat';
+        String barCodeScanRes =  'geo:40.712776,-74.005974';
         
         final scanListProvider = Provider.of<ScanListProvider>(context, listen: false);
         scanListProvider.nouScan(barCodeScanRes);
